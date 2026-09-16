@@ -655,6 +655,55 @@
   }
 
 
+.why-now-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #DCE1FF;
+  margin-bottom: 10px;
+}
+.why-now-body { font-size: 14.5px; color: var(--ink); margin: 0; }
+
+/* ===== Concepts intro ===== */
+.concept-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 26px;
+}
+.concept-summary-card {
+  background: var(--glass-fill-strong);
+  border: 1px solid var(--glass-border-soft);
+  border-radius: 14px;
+  padding: 20px 22px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.concept-summary-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tw-blue-soft);
+  margin-bottom: 10px;
+}
+.concept-summary-tag {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--tw-blue), var(--tw-blue-soft));
+  padding: 4px 11px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.concept-summary-desc { font-size: 14.5px; color: var(--slate); margin: 0; }
+@media (max-width: 640px) {
+  .concept-summary-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== Tab bar ===== */
 .tab-group { display: flex; align-items: center; gap: 10px; }
 .tab-label {
@@ -711,6 +760,23 @@
       <div class="tab-row">
         <button class="tab-btn active" data-tab="identity" onclick="showTab('identity')">① Trust Replay</button>
         <button class="tab-btn" data-tab="season" onclick="showTab('season')">② Trust Sidequest</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero glass" style="margin-bottom:24px;">
+    <h1>2 Growth Concepts <span class="em">for Trust Wallet</span></h1>
+    <p class="thesis">Designed around the product priorities discussed: DeFi Trading, ecosystem expansion, AI and recurring user engagement.</p>
+    <div class="concept-summary-grid">
+      <div class="concept-summary-card">
+        <div class="concept-summary-num">01 — Trust Replay</div>
+        <span class="concept-summary-tag">Acquire</span>
+        <p class="concept-summary-desc">Turn existing onchain identity into a shareable acquisition hook.</p>
+      </div>
+      <div class="concept-summary-card">
+        <div class="concept-summary-num">02 — Trust Sidequest</div>
+        <span class="concept-summary-tag">Engage &amp; Retain</span>
+        <p class="concept-summary-desc">Turn Trust Wallet's product roadmap into a recurring GTM engine.</p>
       </div>
     </div>
   </div>
@@ -1416,7 +1482,8 @@
   <section>
     <div class="box-stack">
       <div class="key-question">
-        <b>My thoughts:</b> Trust Sidequest isn't just another campaign. It's a repeatable GTM framework that turns Trust Wallet's product roadmap and ecosystem partnerships into recurring user acquisition, product adoption and retention.
+        <div class="why-now-title">Why now?</div>
+        <p class="why-now-body">Trust Wallet is increasingly positioning itself around trading, DeFi and new onchain experiences. As the product surface expands, a recurring campaign framework can give users a simple reason to discover each new capability, while giving partners a repeatable way to participate.</p>
         <span class="closer">One season creates a campaign. A seasonal system creates a growth loop.</span>
       </div>
     </div>
